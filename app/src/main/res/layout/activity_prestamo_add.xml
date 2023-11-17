@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".PrestamoAddActivity">
+
+    <EditText
+        android:id="@+id/friend4"
+        android:layout_width="182dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="29dp"
+
+        android:background="#D7D7CC"
+        android:ems="10"
+        android:hint="Nombre del amigo"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#515151"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/prestamo4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/friend3"
+        app:layout_constraintTop_toBottomOf="@+id/friend3" />
+
+    <EditText
+        android:id="@+id/friend3"
+        android:layout_width="182dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+
+        android:layout_marginEnd="26dp"
+        android:background="#D7D7CC"
+        android:ems="10"
+        android:hint="Nombre del amigo"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#515151"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/prestamo3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/friend2"
+        app:layout_constraintTop_toBottomOf="@+id/friend2" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="378dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/backP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#065CD6"
+            app:srcCompat="?attr/actionModeCloseDrawable" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="256dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Prestamos"
+            android:textAlignment="center"
+            android:textColor="#FFFEFE"
+            android:textSize="34sp" />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/friend2"
+        android:layout_width="182dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="29dp"
+        android:background="#D7D7CC"
+
+        android:ems="10"
+        android:hint="Nombre del amigo"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#515151"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/prestamo2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/friend1"
+        app:layout_constraintTop_toBottomOf="@+id/friend1" />
+
+    <EditText
+        android:id="@+id/prestamo1"
+        android:layout_width="167dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="143dp"
+        android:layout_marginEnd="12dp"
+        android:background="#D7D7CC"
+
+        android:ems="10"
+        android:hint="Valor del Prestamo"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#515151"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <EditText
+        android:id="@+id/friend1"
+        android:layout_width="182dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="12dp"
+        android:background="#D7D7CC"
+
+        android:ems="10"
+        android:hint="Nombre del amigo"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#515151"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/prestamo1"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <EditText
+        android:id="@+id/prestamo2"
+        android:layout_width="167dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="#D7D7CC"
+        android:ems="10"
+        android:hint="Valor del Prestamo"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#515151"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prestamo1" />
+
+    <EditText
+        android:id="@+id/prestamo3"
+        android:layout_width="167dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="#D7D7CC"
+        android:ems="10"
+        android:hint="Valor del Prestamo"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#515151"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prestamo2" />
+
+    <EditText
+        android:id="@+id/prestamo4"
+        android:layout_width="167dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="#D7D7CC"
+        android:ems="10"
+        android:hint="Valor del Prestamo"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#515151"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prestamo3" />
+
+    <Button
+        android:id="@+id/savePrestamos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="121dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginBottom="108dp"
+        android:backgroundTint="#0AC35E"
+        android:text="Guardar Cambios"
+        android:textColor="#070707"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/friend4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

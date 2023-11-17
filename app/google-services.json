@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "411085790015",
+    "project_id": "saveurcash-49673",
+    "storage_bucket": "saveurcash-49673.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:411085790015:android:87e35230f82d52351c118a",
+        "android_client_info": {
+          "package_name": "co.edu.udea.analisis.saveUr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "411085790015-78t3p4g576jb0b9eiu06s7rehqctq75n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.edu.udea.analisis.saveUr",
+            "certificate_hash": "e3836454f7917908b91069fb7df72cd47471e948"
+          }
+        },
+        {
+          "client_id": "411085790015-tvnf3ue2jg02sn4jvdg581o12gapn154.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCl6zpqLGGLGNg7_jA-bzVkoD_w6z7mdvc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "411085790015-tvnf3ue2jg02sn4jvdg581o12gapn154.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

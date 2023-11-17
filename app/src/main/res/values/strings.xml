@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">saveUr</string>
+    <string name="saveurcash">SaveUrCash</string>
+    <string name="iniciar_con_e_mail">iniciar con e-mail</string>
+    <string name="iniciar_con_google">iniciar con google</string>
+    <string name="cancelar"><u>Cancelar</u></string>
+
+    <string name="titulo"><u>Titulo</u></string>
+    <string name="dia_del_mes_recurrente"><u>Dia Del Mes Recurrente</u></string>
+    <string name="valor_fijo_00"><u>Valor fijo || 00</u></string>
+    <string name="de_cuotas_1"><u># De Cuotas ó -1</u></string>
+    <string name="title_activity_abono">AbonoActivity</string>
+</resources>

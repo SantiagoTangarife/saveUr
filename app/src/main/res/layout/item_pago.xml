@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    android:clickable="true">
+
+    <Button
+        android:id="@+id/nameP"
+        android:layout_width="320dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#73C104"
+        android:clickable="false"
+        android:text="Nombre"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <AutoCompleteTextView
+        android:id="@+id/CantidadP"
+        android:layout_width="205dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:background="#3A3A33"
+        android:hint="$Valor de Pago"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#A69595"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/nameP"
+        app:layout_constraintTop_toBottomOf="@+id/nameP" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="437dp"
+        android:layout_height="2dp"
+        android:background="#323131"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="-13dp" />
+
+    <TextView
+        android:id="@+id/valorPrestamo"
+        android:layout_width="81dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="324dp"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/CantidadP"
+        app:layout_constraintStart_toStartOf="@+id/nameP"
+        app:layout_constraintTop_toTopOf="@+id/nameP"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

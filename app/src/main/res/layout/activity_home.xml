@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".HomeActivity">
+
+    <HorizontalScrollView
+        android:id="@+id/Horizontal"
+        android:layout_width="374dp"
+        android:layout_height="154dp"
+
+
+        android:background="#716D6D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.594"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.358">
+
+        <LinearLayout
+            android:id="@+id/InfoG"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Dinero"
+                android:layout_width="match_parent"
+                android:layout_height="81dp"
+                android:text="     Dinero Gastado En El Mes"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="42dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="151dp"
+                        android:layout_height="wrap_content"
+                        android:text="$gastado"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
+
+                    <Space
+                        android:layout_width="73dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="142dp"
+                        android:layout_height="match_parent"
+                        android:text="$Disponible"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
+                </LinearLayout>
+            </ScrollView>
+
+            <ProgressBar
+                android:id="@+id/progressBar2"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="377dp"
+                android:layout_height="33dp"
+                android:progressTint="#FF0000" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/SaludoBienvenida"
+        android:layout_width="264dp"
+        android:layout_height="94dp"
+        android:text="Hola\nUsuario Apellido"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.204"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <Button
+        android:id="@+id/Ingresos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="144dp"
+        android:backgroundTint="#03A9F4"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="Ingresos"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="183dp"
+        android:layout_height="60dp"
+        android:text="Categorias"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Horizontal"
+        app:layout_constraintVertical_bias="0.093" />
+
+    <TableLayout
+        android:layout_width="407dp"
+        android:layout_height="247dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Horizontal"
+        app:layout_constraintVertical_bias="0.724">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/AhorroProg"
+                android:layout_width="199dp"
+                android:layout_height="125dp"
+                android:backgroundTint="#FFF503"
+                android:drawableTop="@drawable/savemoney"
+
+                android:text="Ahorro Programado"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="19dp"
+                android:layout_height="125dp" />
+
+            <Button
+                android:id="@+id/Facturas"
+                android:layout_width="179dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="#22B14C"
+                android:drawableTop="@drawable/factura"
+
+                android:text="Facturas"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/Extracto"
+                android:layout_width="185dp"
+                android:layout_height="125dp"
+                android:backgroundTint="#025B85"
+                android:drawableTop="@drawable/dinero"
+
+                android:text="Extractos"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="19dp"
+                android:layout_height="125dp" />
+
+            <Button
+                android:id="@+id/Prestamos"
+                android:layout_width="199dp"
+                android:layout_height="125dp"
+                android:backgroundTint="#7F7F7F"
+                android:drawableTop="@drawable/prestamo"
+
+                android:text="Prestamos"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+    </TableLayout>
+
+    <Button
+        android:id="@+id/Egresos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="144dp"
+        android:text="Egresos"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.915"
+        app:layout_constraintStart_toStartOf="@+id/Ingresos"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="28dp"
+        android:backgroundTint="#F31B1B"
+        android:text="Cerrar"
+        app:layout_constraintBottom_toTopOf="@+id/SaludoBienvenida"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

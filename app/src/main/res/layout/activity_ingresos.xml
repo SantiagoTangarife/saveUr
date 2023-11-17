@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/IngresoFijo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".IngresosActivity">
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView2"
+        android:layout_width="407dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginBottom="140dp"
+        app:layout_constraintBottom_toTopOf="@+id/IdValorIngreso"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/backToHomeI"
+                android:layout_width="68dp"
+                android:layout_height="match_parent"
+
+                android:background="#FFFFFF"
+                android:backgroundTint="#3F48CC"
+                app:srcCompat="?attr/actionModeCloseDrawable" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="310dp"
+                android:layout_height="match_parent"
+                android:layout_weight="100"
+                android:text="  Ingresos   "
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="42sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <EditText
+        android:id="@+id/IdValorIngreso"
+        android:layout_width="270dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="446dp"
+        android:background="#D7D7CC"
+        android:ems="10"
+        android:hint="  Valor del Ingreso"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#515151"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.255"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2" />
+
+    <Button
+        android:id="@+id/SaveIngreso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="264dp"
+        android:backgroundTint="#18BF1E"
+        android:text="Guardar"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.66"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <AutoCompleteTextView
+        android:id="@+id/IdTituloIngreso"
+        android:layout_width="271dp"
+        android:layout_height="58dp"
+        android:background="#D7D7CC"
+        android:hint="  Titulo del Ingreso"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#515151"
+        app:layout_constraintBottom_toTopOf="@+id/IdValorIngreso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.257"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2"
+        app:layout_constraintVertical_bias="0.646" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="206dp"
+        android:layout_height="29dp"
+        android:hint="  Es un Ingreso Fijo Mensual"
+        android:textAlignment="center"
+        android:textColorHint="#FFFFFF"
+        android:textSize="16sp"
+        app:drawableTint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/SaveIngreso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.178"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IdValorIngreso"
+        app:layout_constraintVertical_bias="0.51" />
+
+    <CheckBox
+        android:id="@+id/ingresoFijo"
+        android:layout_width="50dp"
+        android:layout_height="23dp"
+        android:buttonTint="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/SaveIngreso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/IdValorIngreso"
+        app:layout_constraintVertical_bias="0.486" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
