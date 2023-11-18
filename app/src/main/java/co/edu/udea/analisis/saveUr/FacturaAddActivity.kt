@@ -8,6 +8,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.annotation.RequiresApi
+
 import java.io.File
 import java.time.LocalDate
 
@@ -28,6 +29,8 @@ class FacturaAddActivity : AppCompatActivity() {
         }
 
     }
+
+
 
     fun addFactura(texto: String) {//texto= arriendo;25;00;-1
         try {

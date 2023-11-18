@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
 import android.widget.ImageButton
+import androidx.core.content.ContextCompat
 
 import kotlinx.android.synthetic.main.activity_pagos.*
 import java.io.BufferedReader
@@ -48,6 +49,12 @@ class PagosActivity : AppCompatActivity() {
         }
 
 */
+
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        startActivity(Intent(this, PrestamosActivity::class.java))
 
     }
 

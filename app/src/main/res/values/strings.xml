@@ -10,4 +10,6 @@
     <string name="valor_fijo_00"><u>Valor fijo || 00</u></string>
     <string name="de_cuotas_1"><u># De Cuotas ó -1</u></string>
     <string name="title_activity_abono">AbonoActivity</string>
+    <string name="title_activity_extractos">ExtractosActivity</string>
+    <string name="title_activity_historial">HistorialActivity</string>
 </resources>

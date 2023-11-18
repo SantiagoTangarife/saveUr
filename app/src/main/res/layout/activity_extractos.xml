@@ -14,7 +14,8 @@
         android:layout_marginTop="16dp"
         android:orientation="horizontal"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="1dp">
+        tools:layout_editor_absoluteX="1dp"
+        tools:ignore="MissingConstraints">
 
         <ImageButton
             android:id="@+id/backP1"
@@ -22,8 +23,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#000CFB"
-            android:tint="#FBF6F6"
-            app:srcCompat="?attr/actionModeCloseDrawable" />
+            app:srcCompat="?attr/actionModeCloseDrawable"
+            app:tint="#FBF6F6" />
 
         <Space
             android:layout_width="wrap_content"
@@ -36,16 +37,17 @@
             android:layout_height="54dp"
             android:layout_gravity="center_horizontal|center_vertical"
             android:layout_weight="1"
-            android:text="Pagos"
+            android:text="Extractos"
             android:textAlignment="textStart"
             android:textColor="#FFFCFC"
             android:textSize="24sp"
-            android:textStyle="bold|italic" />
+            android:textStyle="bold|italic"
+            tools:ignore="RtlCompat" />
 
     </LinearLayout>
 
     <ListView
-        android:id="@+id/listP"
+        android:id="@+id/listaE"
         android:layout_width="408dp"
         android:layout_height="634dp"
         android:layout_marginStart="8dp"

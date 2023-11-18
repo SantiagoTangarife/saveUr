@@ -62,4 +62,17 @@
         app:layout_constraintTop_toTopOf="@+id/nameP"
         app:layout_constraintVertical_bias="1.0" />
 
+    <Button
+        android:id="@+id/pagoParcial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#14670E"
+        android:text="Guardar"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toEndOf="@+id/CantidadP" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

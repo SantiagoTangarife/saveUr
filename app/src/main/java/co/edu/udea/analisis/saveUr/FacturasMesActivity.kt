@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.annotation.RequiresApi
+
 import kotlinx.android.synthetic.main.activity_facturas_mes.*
 import kotlinx.android.synthetic.main.activity_progreso.*
 import java.io.BufferedReader
@@ -43,6 +44,9 @@ class FacturasMesActivity : AppCompatActivity() {
 
 
     }
+    override fun onBackPressed() {
+        super.onBackPressed()
+        startActivity(Intent(this, HomeActivity::class.java))}
 
     fun CargarF() : List<String> {
         var texto = ""
